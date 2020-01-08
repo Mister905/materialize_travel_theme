@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- https://icons8.com/line-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <title>Materialize Travel Agency</title>
+  </head>
+  <body id="home" class="scrollspy">
+    <!-- NAVBAR -->
+    <div class="navbar-fixed">
+      <nav class="teal">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Wanderer</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#search">Search</a>
+              </li>
+              <li>
+                <a href="#popular">Popular</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- SIDENAVE -->
+    <ul id="mobile-nav" class="sidenav">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#search">Search</a>
+      </li>
+      <li>
+        <a href="#popular">Popular</a>
+      </li>
+      <li>
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <!-- SLIDE -->
+    <div id="image_slider" class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./img/resort1.jpg" />
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="./img/resort2.jpg" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="./img/resort3.jpg" />
+          <!-- random image -->
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Here's our small slogan.
+            </h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- SEARCH -->
+    <div class="section teal darken-1 white-text center scrollspy">
+      <div class="container">
+        <div class="row">
+          <div class="col m12">
+            <h3>Search Destinations</h3>
+            <div class="input-field">
+              <input
+                id="autocomplete_input"
+                type="text"
+                class="white grey-text autocomplete"
+                placeholder="Aruba, Cancun, etc..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ICONS -->
+    <div class="icons section">
+      <div class="container">
+        <div class="row">
+          <div class="col m4 s12 center-align">
+            <div class="card">
+              <div class="card-content">
+                <i class="material-icons large teal-text">room</i>
+                <h4>Where?</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus temporibus, quia dignissimos rem maiores minus
+                  maxime officia dolor alias reiciendis quidem veritatis!
+                  Debitis, iste cumque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col m4 s12 center-align">
+            <div class="card">
+              <div class="card-content">
+                <i class="material-icons large teal-text">shop</i>
+                <h4>Store</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus temporibus, quia dignissimos rem maiores minus
+                  maxime officia dolor alias reiciendis quidem veritatis!
+                  Debitis, iste cumque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col m4 s12 center-align">
+            <div class="card">
+              <div class="card-content">
+                <i class="material-icons large teal-text"
+                  >airplanemode_active</i
+                >
+                <h4>Cheap Flights</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus temporibus, quia dignissimos rem maiores minus
+                  maxime officia dolor alias reiciendis quidem veritatis!
+                  Debitis, iste cumque.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popular Places -->
+    <section id="popular" class="section scrollspy">
+      <div class="container">
+        <div class="row">
+          <div class="col m12 center-align">
+            <h3>Popular Places</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/resort1.jpg" alt="Cancun, Mexico" />
+                <span class="card-title">Cancun, Mexico</span>
+              </div>
+              <div class="card-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                aliquid, iusto laudantium aperiam rem sed culpa enim esse nihil
+                minima voluptatum nobis ratione inventore, ex repudiandae
+                maiores repellat, dolorem natus iste. Quos vel exercitationem
+                laboriosam nemo harum aut atque aliquam, rerum nobis veniam
+                recusandae laborum. Blanditiis consequuntur ab aut amet.
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/resort2.jpg" alt="Cancun, Mexico" />
+                <span class="card-title">Bahamas</span>
+              </div>
+              <div class="card-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                aliquid, iusto laudantium aperiam rem sed culpa enim esse nihil
+                minima voluptatum nobis ratione inventore, ex repudiandae
+                maiores repellat, dolorem natus iste. Quos vel exercitationem
+                laboriosam nemo harum aut atque aliquam, rerum nobis veniam
+                recusandae laborum. Blanditiis consequuntur ab aut amet.
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/resort3.jpg" alt="Cancun, Mexico" />
+                <span class="card-title">Nova Scotia</span>
+              </div>
+              <div class="card-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                aliquid, iusto laudantium aperiam rem sed culpa enim esse nihil
+                minima voluptatum nobis ratione inventore, ex repudiandae
+                maiores repellat, dolorem natus iste. Quos vel exercitationem
+                laboriosam nemo harum aut atque aliquam, rerum nobis veniam
+                recusandae laborum. Blanditiis consequuntur ab aut amet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      // Side Nav Initialization
+      const side_nav = document.querySelector("#mobile-nav");
+      M.Sidenav.init(side_nav, {});
+      // Image Slider Initialization
+      const slider = document.querySelector("#image_slider");
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500
+      });
+      //   Autocomplete
+      const ac = document.querySelector("#autocomplete_input");
+      M.Autocomplete.init(ac, {
+        data: {
+          Aruba: null,
+          Cancun: null,
+          Hawaii: null,
+          Miami: null,
+          "Venice Beach": null,
+          Dubai: null
+        }
+      });
+    </script>
+  </body>
+</html>
